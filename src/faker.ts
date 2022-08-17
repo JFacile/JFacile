@@ -31,9 +31,9 @@ export const JColorArray = () => {
 
 //In progress...
 const JDateTest = () => {
-  return (new Date().getDay()) 
+   new Date().getDay() 
 }
-export const JDate = () => {
+export function JDate() {
   return (JDateTest)
 }
 const JLogTest = () => {
@@ -49,11 +49,16 @@ export const JR = () => {
   return(JRTest)
 }
 const JVarTest = () => {
-  return ('Coucou !');
+  var total = 0;
 };
 export const JVar = () => {
   return (JVarTest)
 }
 const JLogColor = () => {
 }
-
+const JExpressTest = () => {
+  const express = require('express')
+}
+export const JExpress = () => {
+  return(JExpressTest)
+}

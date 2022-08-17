@@ -9,11 +9,10 @@ import { JLog } from "./faker";
 import { JVar } from "./faker";
 import {JRejectionHandled} from "./process"
 import {JColorArray} from "./faker"
+import {JExpress} from "./faker"
 
 exports = {
     get JColorRandom() {return JColorRandom()},
-    get JDate() {return JDate()},
-    get JLog() {return JLog}
 }
 export {JColorArray} 
 export {JExit}
@@ -23,3 +22,6 @@ export {JUnCaughtException}
 export {JR}
 export {JVar} 
 export {JRejectionHandled}
+export {JExpress}
+export {JDate}
+export {JLog}
