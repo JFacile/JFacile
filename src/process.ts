@@ -1,12 +1,6 @@
-const JExitTest = process.on("exit", (code) => {
-    console.log(`\x1B[31mExit !\x1B[34m Le procecuss s'est arrêté avec le code ${code}`);
-  });
+export const JExit = () => process.on("exit", (code) => console.log(`\x1B[31mExit !\x1B[34m Le procecuss s'est arrêté avec le code ${code}`));
 
-export const JExit = () => {
-    return(JExitTest)
-}
-
-const JUnhandledRejectonTest = () => {
+export const JUnhandledRejection = () => {
     process.on(
         "unhandledRejection",
         (reaseon, promise) =>
@@ -14,33 +8,36 @@ const JUnhandledRejectonTest = () => {
             `\x1B[31m/!/ UnhandledRejection /!/\x1B[34m \nReason : ${reaseon}\nPromise : ${promise}`
           )
       );
-}
+};
 
-export const JUnhandledRejection = () => {
-    return(JUnhandledRejectonTest)
-}
-
-const JUnCaughtExceptionTest = () => {
+export const JUnCaughtException = () => {
     process.on("uncaughtException", (err, origin) => {
         console.log(
           `\x1B[31m/!/ UncaughtException /!/\x1B[34m \nErreur : ${err}\nOrgin : ${origin}`
         );
       });
-}
-export const JUnCaughtException = () => {
-    return(JUnCaughtExceptionTest)
-}
-const JWarningTest = () => {
-    process.on("warning", (...args) => console.log(...args));
-}
-export const JWarning = () => {
-    return(JWarningTest)
-}
-const JRejectionHandledTest = () => {
-    process.on("rejectionHandled", () => {
-        console.log(`\x1B[31m/!/ RejectionHandled /!/\x1B[34m Erreur !`)
-    })
-}
+};
+
+export const JWarning = () => process.on("warning", (...args) => console.log(...args));
+
 export const JRejectionHandled = () => {
-    return(JRejectionHandledTest)
-}
+    process.on("rejectionHandled", () => {
+        console.log(`\x1B[31m/!/ RejectionHandled /!/\x1B[34m Erreur !`);
+    });
+};
+
+export const JuncaughtExceptionMonitor = () => {
+    process.on("uncaughtExceptionMonitor", (err, origin) => {
+        console.log(
+            `\x1B[31m/!/ UncaughtExceptionMonitor /!/\x1B[34m \nErreur : ${err}\nOrgin : ${origin}`
+        );
+    });
+};
+
+export const JmultipleResolves = () => {
+    process.on("multipleResolves", (err, origin) => {
+        console.log(
+            `\x1B[31m/!/ MultipleResolves /!/\x1B[34m \nErreur : ${err}\nOrgin : ${origin}`
+        );
+    });
+};

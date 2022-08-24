@@ -1,5 +1,8 @@
-const JFacile = require("../lib/index.js");
+const JFacile = require("../lib/index");
 
-JFacile.JLog();
-console.log(JFacile.JDate);
-JFacile.JColorArray();
+console.log(JFacile.JColor());
+JFacile.sum(5, 2);
+JFacile.multi(5, 2);
+JFacile.mathPow(2, 2);
+
+JFacile.JColorRandom();

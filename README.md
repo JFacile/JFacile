@@ -19,8 +19,17 @@ JFacile.JUnCaughtException
 JFacile.JRejectionHandled
 
 //Utils
-console.log(JFacile.JColorRandom);
-console.log(JFacile.JColorArray())
+JFacile.JColorRandom()
+console.log(JFacile.JColor())
+
+//Maths
+
+JFacile.sum(5, 2)
+JFacile.add(5, 2)
+JFacile.multi(5, 2)
+JFacile.divi(5, 2)
+JFacile.mathPow(5, 2)
+JFacile.mathRandom()
 ```
 
 Create a anti crash process with require("jfacile") !
