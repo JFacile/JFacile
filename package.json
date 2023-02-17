@@ -1,11 +1,11 @@
 {
   "name": "jfacile",
-  "version": "0.1.5",
+  "version": "0.2.1",
   "description": "Code in JS is easy with JFacile",
   "main": "./lib/index.js",
   "scripts": {
     "compil": "npx tsc",
-    "test": "node ./test/index.test.js"
+    "test": "jest"
   },
   "author": "Eragon941",
   "license": "ISC",
@@ -16,5 +16,8 @@
     "express": "^4.18.2",
     "express-handlebars": "^6.0.6",
     "typescript": "^4.7.4"
+  },
+  "devDependencies": {
+    "jest": "^29.3.1"
   }
 }
