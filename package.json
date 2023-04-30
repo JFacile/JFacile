@@ -19,5 +19,8 @@
   },
   "devDependencies": {
     "jest": "^29.3.1"
+  },
+  "publishConfig": {
+    "@undefined_ss:registry": "https://npm.pkg.github.com"
   }
 }
