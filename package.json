@@ -1,5 +1,5 @@
 {
-  "name": "jfacile",
+  "name": "@JFacile/JFacile",
   "version": "0.2.1",
   "description": "Code in JS is easy with JFacile",
   "main": "./lib/index.js",
@@ -7,7 +7,10 @@
     "compil": "npx tsc",
     "test": "exit 0"
   },
-  "author": "Eragon941",
+  "repository": {
+    "url": "https://github.com/JFacile/JFacile.git"
+  },
+  "author": "undefined_ss",
   "license": "ISC",
   "files": [
     "lib/**/*"
